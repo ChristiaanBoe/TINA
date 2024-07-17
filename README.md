@@ -11,7 +11,7 @@ From that point onwards you can accelerate using whatever NN accelerator you pre
 
 ----------------------------------------------------------------------------------
 # Usage of TINA
-After the installation of the aforementioned required libraries, the TINA layers can be imported via the code directory and used in a similar manner as Pytorch.nn layers.
+After the installation of the aforementioned required libraries, the TINA layers can be imported via the directory TINA layers and used in a similar manner as Pytorch.nn layers.
 
 Example notebooks of TINA layers accelerated using the AMD Ryzen 9 7940HS can be found in the directory NPU scripts
 
