@@ -1,6 +1,6 @@
 # TINA
 
-TINA is a framework that allows representing non-NN dataflow algorithms as a series of convolutional and fully-connected NN layers. This makes it possible to execute non-NN algorithms on NN HW accelerators, as well as ensure the portability of TINA implementations to any platform that supports such NN HW.
+TINA is a framework that allows representing non-NN dataflow algorithms as a series of convolutional and fully connected NN layers. This makes it possible to execute non-NN algorithms on NN HW accelerators, as well as ensure the portability of TINA implementations to any platform that supports such NN HW.
 
 ----------------------------------------------------------------------------------
 # Requirements
@@ -17,11 +17,12 @@ Example notebooks of TINA layers accelerated using the AMD Ryzen 9 7940HS can be
 
 ----------------------------------------------------------------------------------
 # Contact
-You can contact me using the following email: Christiaanboer@tudelft.nl
+You can contact me using the following email: c.boerkamp@tudelft.nl
 
 ----------------------------------------------------------------------------------
 # Publications
-To be announced
+If you use this work, please cite the following publication. 
+Christiaan Boerkamp, Steven van der Vlugt and Zaid Al-Ars, "TINA: Acceleration of Non-NN Signal Processing Algorithms Using NN Accelerators", IEEE Int'l Workshop on Machine Learning for Signal Processing (MLSP), 2024
 
 ----------------------------------------------------------------------------------
 # license
