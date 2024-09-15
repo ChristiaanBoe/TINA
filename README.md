@@ -25,5 +25,11 @@ If you use this work, please cite the following publication.
 Christiaan Boerkamp, Steven van der Vlugt and Zaid Al-Ars, "TINA: Acceleration of Non-NN Signal Processing Algorithms Using NN Accelerators", IEEE Int'l Workshop on Machine Learning for Signal Processing (MLSP), 2024
 
 ----------------------------------------------------------------------------------
+# Applications
+The TINA framewok has been applied to a Ryzen 9 NPU in the [Pervasive AI Developer Contest](https://www.hackster.io/contests/amd2023).
+In the project [TINA: Running non NN algorithms on an AMD Ryzen NPU!](https://www.hackster.io/tina/tina-running-non-nn-algorithmns-on-an-amd-ryzen-npu-0cc58c).
+Refer to this project page for an elaborate explanation.
+
+----------------------------------------------------------------------------------
 # license
 Apache 2.0
