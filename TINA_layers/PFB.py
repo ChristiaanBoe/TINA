@@ -1,6 +1,14 @@
 import torch
 import torch.nn as nn
 import numpy as np
+import scipy
+
+
+def generate_win_coeffs(M, P, window_fn="hamming"):
+    win_coeffs = scipy.signal.get_window(window_fn, M*P)
+    sinc       = scipy.signal.firwin(M * P, cutoff=1.0/P, window="rectangular")
+    win_coeffs *= sinc
+    return win_coeffs
 
 class DFTLayer(nn.Module):
     def __init__(self, input_size):
