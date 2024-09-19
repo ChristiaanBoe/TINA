@@ -15,5 +15,5 @@ class matrixmatrixProduct(nn.Module):
 
       self.productlayer.weight.requires_grad = False  # Set to `True` if you want to fine-tune the weights
   def forward(self, x):
-      output = self.FFTconv(x)
+      output = self.productlayer(x)
       return output
