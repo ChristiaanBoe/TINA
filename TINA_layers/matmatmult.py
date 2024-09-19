@@ -5,7 +5,7 @@ class matrixmatrixProduct(nn.Module):
 
 
   def __init__(self, matrix) -> None:
-      super(dotProduct, self).__init__()
+      super(matrixmatrixProduct, self).__init__()
       shape = matrix.shape
       self.height, self.width = shape
       
