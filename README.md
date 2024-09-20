@@ -22,7 +22,7 @@ You can contact me using the following email: c.boerkamp@tudelft.nl
 ----------------------------------------------------------------------------------
 # Publications
 If you use this work, please cite the following publication. 
-Christiaan Boerkamp, Steven van der Vlugt and Zaid Al-Ars, "TINA: Acceleration of Non-NN Signal Processing Algorithms Using NN Accelerators", IEEE Int'l Workshop on Machine Learning for Signal Processing (MLSP), 2024
+Christiaan Boerkamp, Steven van der Vlugt and Zaid Al-Ars, "TINA: Acceleration of Non-NN Signal Processing Algorithms Using NN Accelerators", IEEE Int'l Workshop on Machine Learning for Signal Processing (MLSP), 2024 (https://arxiv.org/abs/2408.16551v1)
 
 ----------------------------------------------------------------------------------
 # Applications
