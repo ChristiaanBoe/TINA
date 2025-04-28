@@ -6,5 +6,4 @@ build:
     python: "3.11"
   commands:
     - pip install torch onnx pelican
-  html:
     - pelican --settings docs/pelicanconf.py --output $READTHEDOCS_OUTPUT/html/ docs/
