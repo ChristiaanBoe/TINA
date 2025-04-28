@@ -6,4 +6,3 @@ build:
     python: "3.11"
   commands:
     - pip install torch onnx
-    - sphinx-build -b html docs/ _build/html
