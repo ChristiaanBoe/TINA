@@ -4,10 +4,8 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.11"
+
   commands:
     - pip install torch onnx pelican markdown
-    - pelican docs/content/pages \
-             --settings docs/pelicanconf.py \
-             --output $READTHEDOCS_OUTPUT/html \
-             --delete-output-directory
+    - bash -lc "ls && pelican docs/content/pages --settings docs/pelicanconf.py --output $READTHEDOCS_OUTPUT/html"
     - find $READTHEDOCS_OUTPUT/html -maxdepth 1 -type f -print
