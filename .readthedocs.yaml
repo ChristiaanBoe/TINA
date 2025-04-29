@@ -5,7 +5,7 @@ build:
   tools:
     python: "3.11"
   commands:
-    # 1) install your deps + Markdown support
     - pip install torch onnx pelican markdown
-    # 2) build with Pelican (no backslashes—one line only!)
     - pelican --settings docs/pelicanconf.py --output $READTHEDOCS_OUTPUT/html/ docs/
+    # ← new diagnostics line:
+    - find $READTHEDOCS_OUTPUT/html/ -maxdepth 2 -type f -print
