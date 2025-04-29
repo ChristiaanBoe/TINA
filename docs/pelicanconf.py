@@ -2,13 +2,26 @@
 import os
 
 # ========== Core Settings ==========
+SITEURL = os.environ.get('READTHEDOCS_PROJECT_URL', 'http://localhost:8000')
+PATH = 'content/pages'
+
+OUTPUT_PATH = os.path.join(os.environ.get('READTHEDOCS_OUTPUT', ''), 'html')
+# Required Read the Docs integration
+DELETE_OUTPUT_DIRECTORY = True  # Let Pelican handle cleanup
 AUTHOR = 'Your Name'
 SITENAME = 'TINA Documentation'
-SITEURL = os.environ.get('READTHEDOCS_PROJECT_URL', 'http://localhost:8000')
-PATH = 'content/pages'  # Relative to the pelicanconf.py location
 TIMEZONE = 'Europe/Amsterdam'
 DEFAULT_LANG = 'en'
 
+
+
+
+# Basic configuration
+AUTHOR = 'Your Name'
+SITENAME = 'TINA Documentation'
+TIMEZONE = 'Europe/Amsterdam'
+DEFAULT_LANG = 'en'
+THEME = 'simple'  # Use built-in theme
 # ========== Read the Docs Specific ==========
 # Use environment variable for output path
 READTHEDOCS_OUTPUT = os.environ.get('READTHEDOCS_OUTPUT', 'output')
