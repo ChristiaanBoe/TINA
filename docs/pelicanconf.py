@@ -1,16 +1,21 @@
 # docs/pelicanconf.py
+
 AUTHOR = 'Christiaan Boerkamp'
 SITENAME = 'TINA Documentation'
 SITEURL = ''
-# Where to find your content
+
+# where to find your content
 PATH = 'content'
 
-# treat _every_ .md/.rst in content/ as a page
-PAGE_PATHS    = ['.']
+# treat .md/.rst in content/ and content/pages/ as standalone pages
+PAGE_PATHS    = ['.', 'pages']
 
-# (optional) disable “articles” entirely
+# disable Pelican “articles” entirely
 ARTICLE_PATHS = []
+
+# your locale settings
 TIMEZONE = 'Europe/Amsterdam'
 DEFAULT_LANG = 'en'
 
-THEME = 'notmyidea'  # or any Pelican theme you like
+# pick any Pelican theme you like
+THEME = 'notmyidea'
