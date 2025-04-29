@@ -5,5 +5,5 @@ build:
   tools:
     python: "3.11"
   commands:
-    - pip install torch onnx pelican markdown
+    - pip install pelican markdown
     - pelican docs/content/pages --settings docs/pelicanconf.py --output $READTHEDOCS_OUTPUT/html --delete-output-directory
