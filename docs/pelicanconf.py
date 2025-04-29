@@ -2,20 +2,20 @@
 
 AUTHOR = 'Christiaan Boerkamp'
 SITENAME = 'TINA Documentation'
-SITEURL = ''  # keep blank on RTD
+SITEURL = ''
 
-# where to find your content
+# 1) Pelican’s root is docs/, so you look in docs/content/
 PATH = 'content'
 
-# only scan docs/content/pages/ for pages
+# 2) Only scan docs/content/pages/ for pages
 PAGE_PATHS    = ['pages']
 ARTICLE_PATHS = []        # no articles
 
-# ensure each page is output at /<slug>.html
+# 3) Flatten URLs so each page is /<slug>.html
 PAGE_URL      = '{slug}.html'
 PAGE_SAVE_AS  = '{slug}.html'
 
-# optional but recommended for RTD so internal links stay local
+# 4) Use relative URLs on RTD so internal links work
 RELATIVE_URLS = True
 
 TIMEZONE = 'Europe/Amsterdam'
