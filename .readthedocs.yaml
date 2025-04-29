@@ -4,7 +4,10 @@ version: 2
 build:
   os: ubuntu-22.04
   tools:
-    python: "3.11"  # Remove patch version
+    python: "3.11"
   commands:
     - pip install pelican markdown
-    - pelican docs/content/pages --settings docs/pelicanconf.py --output $READTHEDOCS_OUTPUT/html
+    # Clean existing output first
+    - rm -rf $READTHEDOCS_OUTPUT/html/*
+    # Build Pelican with proper settings
+    - pelican docs/content/pages --settings docs/pelicanconf.py --output $READTHEDOCS_OUTPUT/html --delete-output-directory
