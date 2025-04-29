@@ -1,7 +1,6 @@
 # docs/pelicanconf.py
 
 # Delete any existing output directory before generating
-DELETE_OUTPUT_DIRECTORY = True
 
 AUTHOR = 'Christiaan Boerkamp'
 SITENAME = 'TINA Documentation'
