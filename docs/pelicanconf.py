@@ -4,7 +4,7 @@
 
 AUTHOR = 'Christiaan Boerkamp'
 SITENAME = 'TINA Documentation'
-SITEURL = ''
+SITEURL = os.environ.get('READTHEDOCS_PROJECT_URL', 'http://localhost:8000')
 
 # … the rest of your config …
 PATH           = '.'
