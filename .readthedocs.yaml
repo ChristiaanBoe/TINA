@@ -7,5 +7,5 @@ build:
 
   commands:
     - pip install torch onnx pelican markdown
-    - bash -lc "cd TINA-main/ && pelican docs/content/pages --settings docs/pelicanconf.py --output $READTHEDOCS_OUTPUT/html"
+    - bash -lc "ls && pelican docs/content/pages --settings docs/pelicanconf.py --output $READTHEDOCS_OUTPUT/html"
     - find $READTHEDOCS_OUTPUT/html -maxdepth 1 -type f -print
