@@ -6,6 +6,4 @@ build:
     python: "3.11"
   commands:
     - pip install torch onnx pelican markdown
-    - pelican --settings docs/pelicanconf.py --output $READTHEDOCS_OUTPUT/html/ docs/
-    # ← new diagnostics line:
-    - find $READTHEDOCS_OUTPUT/html/ -maxdepth 2 -type f -print
+    - pelican docs/content/pages --settings docs/pelicanconf.py --output $READTHEDOCS_OUTPUT/html
