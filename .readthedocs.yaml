@@ -7,3 +7,4 @@ build:
   commands:
     - pip install torch onnx pelican markdown
     - pelican docs/content/pages --settings docs/pelicanconf.py --output $READTHEDOCS_OUTPUT/html
+    - find $READTHEDOCS_OUTPUT/html -maxdepth 1 -type f -print
