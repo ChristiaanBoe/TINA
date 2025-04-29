@@ -7,15 +7,19 @@ SITEURL = ''
 # where to find your content
 PATH = 'content'
 
-# treat .md/.rst in content/ and content/pages/ as standalone pages
+# include both content/ and content/pages/ as top‐level pages
 PAGE_PATHS    = ['.', 'pages']
 
 # disable Pelican “articles” entirely
 ARTICLE_PATHS = []
 
-# your locale settings
+# ────────────────────────────────────────────────────────────────────────────
+# ensure every page ends up at /<slug>.html instead of /pages/<slug>.html
+PAGE_URL      = '{slug}.html'
+PAGE_SAVE_AS  = '{slug}.html'
+# ────────────────────────────────────────────────────────────────────────────
+
 TIMEZONE = 'Europe/Amsterdam'
 DEFAULT_LANG = 'en'
 
-# pick any Pelican theme you like
 THEME = 'notmyidea'
