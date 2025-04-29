@@ -2,21 +2,20 @@
 
 AUTHOR = 'Christiaan Boerkamp'
 SITENAME = 'TINA Documentation'
-SITEURL = ''  # leave blank on RTD
+SITEURL = ''        # keep blank on RTD
 
-# (we’re passing the pages folder on the CLI, so no PATH/PAGE_PATHS needed)
+# ── IMPORTANT ────────────────────────────────────────────────────────────────
+# We’re calling Pelican on docs/content/pages/, so tell it to treat **that root**
+# as the page folder:
+PAGE_PATHS    = ['.']
+ARTICLE_PATHS = []   # disable articles entirely
 
-# disable “articles”
-ARTICLE_PATHS = []
-
-# Flatten every page to /<slug>.html
+# Flatten each page to /<slug>.html
 PAGE_URL     = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
+# ────────────────────────────────────────────────────────────────────────────
 
-# So that internal links work on RTD
 RELATIVE_URLS = True
-
-TIMEZONE     = 'Europe/Amsterdam'
-DEFAULT_LANG = 'en'
-
-THEME = 'notmyidea'
+TIMEZONE      = 'Europe/Amsterdam'
+DEFAULT_LANG  = 'en'
+THEME         = 'notmyidea'
