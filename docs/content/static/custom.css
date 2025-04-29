@@ -1,0 +1,6 @@
+/* Add custom CSS overrides here */
+.highlight {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+}
