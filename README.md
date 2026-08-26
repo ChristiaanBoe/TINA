@@ -17,7 +17,7 @@ Example notebooks of TINA layers accelerated using the AMD Ryzen 9 7940HS can be
 
 ----------------------------------------------------------------------------------
 # Contact
-You can contact me using the following email: c.boerkamp@tudelft.nl
+You can contact me using the following email: christiaanboerkamp@vlvtechnology.com
 
 ----------------------------------------------------------------------------------
 # Publications
